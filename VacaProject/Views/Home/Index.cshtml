@@ -1,8 +1,104 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Plan with intention";
+    ViewData["BodyClass"] = "home-page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">Building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="hero-section" aria-labelledby="hero-title">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="hero-overlay"></div>
+    <div class="container-xl hero-content">
+        <p class="eyebrow">Vacation planning for calmer discovery</p>
+        <h1 id="hero-title">Find the journey that gives your time room to breathe.</h1>
+        <p class="hero-copy">
+            Vaca gathers stays, local events, and restorative moments into a thoughtful path,
+            helping every trip feel composed before it begins.
+        </p>
+        <div class="hero-actions">
+            <a class="btn btn-primary btn-japandi" asp-area="Identity" asp-page="/Account/Register">Begin planning</a>
+            <a class="btn btn-outline-japandi" href="#discover">Explore the flow</a>
+        </div>
+    </div>
+</section>
+
+<section class="intro-section journey-section">
+    <div class="container-xl intro-grid">
+        <div>
+            <p class="eyebrow">A slower way to choose</p>
+            <h2>Trips shaped around mood, rhythm, and meaningful moments.</h2>
+        </div>
+        <p>
+            Instead of beginning with crowded lists, Vaca starts with the feeling of the trip.
+            Quiet mornings, lively evenings, family-friendly pauses, hidden galleries, coastal walks,
+            and seasonal events become part of one balanced plan.
+        </p>
+    </div>
+</section>
+
+<section id="discover" class="journey-section discovery-section">
+    <div class="container-xl">
+        <div class="section-heading">
+            <p class="eyebrow">Curated discovery</p>
+            <h2>Explore places and events without the noise.</h2>
+        </div>
+        <div class="discovery-grid">
+            <article class="discovery-card stay-card">
+                <span class="card-kicker">Stay</span>
+                <h3>Retreats with texture</h3>
+                <p>Cabins, inns, and city hideaways selected for atmosphere, access, and ease.</p>
+            </article>
+            <article class="discovery-card event-card">
+                <span class="card-kicker">Gather</span>
+                <h3>Events that fit the day</h3>
+                <p>Markets, concerts, workshops, and local rituals folded into your route with care.</p>
+            </article>
+            <article class="discovery-card nature-card">
+                <span class="card-kicker">Pause</span>
+                <h3>Open space between plans</h3>
+                <p>Gentle buffers and restorative stops keep the itinerary spacious and realistic.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="journey-section planner-section">
+    <div class="container-xl planner-grid">
+        <div class="planner-panel">
+            <div class="plan-window">
+                <div class="plan-line">
+                    <span>Morning</span>
+                    <strong>Forest bath walk</strong>
+                </div>
+                <div class="plan-line active">
+                    <span>Afternoon</span>
+                    <strong>Ceramic studio visit</strong>
+                </div>
+                <div class="plan-line">
+                    <span>Evening</span>
+                    <strong>Seasonal night market</strong>
+                </div>
+            </div>
+        </div>
+        <div class="planner-copy">
+            <p class="eyebrow">Personalized planning</p>
+            <h2>A composed itinerary that adapts to the way you travel.</h2>
+            <p>
+                Build around pace, budget, interests, and travel companions. Vaca keeps the plan clear,
+                suggests nearby discoveries, and leaves space for the unexpected.
+            </p>
+            <ul class="feature-list">
+                <li>Balanced days with natural transitions</li>
+                <li>Event discovery matched to destination and dates</li>
+                <li>Shared plans for couples, families, and small groups</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="journey-section cta-section">
+    <div class="container-xl cta-inner">
+        <p class="eyebrow">Begin with clarity</p>
+        <h2>Your next vacation can feel settled before you leave.</h2>
+        <p>Create an account to begin shaping a trip around places, events, and moments that belong together.</p>
+        <a class="btn btn-primary btn-japandi" asp-area="Identity" asp-page="/Account/Register">Create your plan</a>
+    </div>
+</section>
